@@ -19,7 +19,7 @@ function openModal(pokemon) {
                 <ol class="types">
                     ${pokemon.types.map((pokemon) => `<li class="type ${pokemon.type.name}">${pokemon.type.name}</li>`).join('')}
                 </ol>
-                <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}"> <!-- Possível erro aqui -->
+                <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}">
             </div>
             <p class="base-stats">Base Stats</p>
             <ol class="stats">
