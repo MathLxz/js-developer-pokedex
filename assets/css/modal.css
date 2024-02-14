@@ -1,0 +1,89 @@
+
+.modal-wrapper{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0 0 0 / .5);
+}
+
+.modal{
+    background-color: #fefefe;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em rgba(0 0 0 / .3);
+    margin: 20%  auto;
+    padding: .7rem;
+    width: 90vw;
+}
+
+.btn-close {
+    color: #888888;
+    float: right;
+    margin-right: .7rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-close:hover{
+    color: #000;
+}
+.pokemon-detail span {
+    text-transform: capitalize;
+}
+.pokemon-detail .detail{
+    border-radius: 1.5rem;
+    padding-bottom: 0.5rem
+}
+.pokemon-detail .detail .types {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-transform: capitalize;
+    padding: 1.5rem .825rem;
+    filter: brightness(1.1);
+    border-radius: 1rem;
+}
+.pokemon-detail .types .type{
+    border-radius: .7rem;
+    padding: .5rem .5rem;
+    margin: 0 .5rem;
+    color: #fff;
+    font-size: .825rem;
+    text-align: center;
+}
+
+.pokemon-detail .detail img {
+    display: block;
+    margin: 0 auto;
+    height: 140px;
+}
+.base-stats{
+    font-weight: 700;
+    margin: 1rem 0.5rem;
+}
+.stats{
+    list-style: none;
+    background-color: rgba(211, 211, 211, 0.251);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px;
+}
+.stats .type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.modal .name, .number{
+    font-size: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+    .modal {
+        width: 25vw;
+        margin: 2.5% auto;
+    }
+}
